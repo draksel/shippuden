@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Draksel shippuden</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="new-game" style="display:none;"></div>
+<div class="btn-play" style="display:none;"></div>	
+<div class="container">
+	<div class="row">
+		<div class="wrap game-inn"></div>
+		<div class="wrap top-head">
+			<div class="logo in-game-logo"></div>
+		</div>
+		<div class="wrap act-menu">
+			
+		</div>
+	</div>
+	<a href="https://vk.com/pdmone">@peitedetimoloko</a>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<sript src="js/bootstrap.bundle.min.js"></sript>
+<script type="text/javascript">
+				$(document).ready(function(){
+					if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+						$('.new-game').remove();
+						$('.btn-play').remove();
+						$('.container').remove();
+ 						$('body').text('').append('<p align="center" class="in-game-font">Мобильная версия не поддерживается</p>');
+ 					}
+					else {
+
+						$('.to-game').append('<div class="egor-selected"></div>');
+						$('.wrap.act-menu').text('').append('<div class="hero-selecter"><h2 class="game-font-class">Cine tu esti ?</h2><div class="egor-photo player-photo active-player"></div><div class="misha-photo player-photo"></div></div><div class="btn-play game-font-class">MERG LA LUCRU</div>');
+						$('.player-photo').click(function(){
+							$obj = $(this);
+									$obj.hasClass('egor-photo') ? $('.to-game').text('').append('<div class="egor-selected"></div>') : $('.to-game').text('').append('<div class="misha-selected"></div>');
+							$('.player-photo').removeClass('active-player');
+							$obj.addClass('active-player');
+						});
+					}
+				});
+</script>
+<div class="to-game"></div>
+<script src="js/core.js"></script>
+
+<div></div>
+
+</body>
+</html>

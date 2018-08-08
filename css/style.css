@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'Sniglet';
+    font-weight:100;
+    src: url("../font/Sniglet-Regular.otf") format("embedded-opentype"),
+    url("../font/Sniglet-Regular.ttf")format("truetype");
+}
+
+@font-face {
+    font-family: 'Sniglet';
+    font-weight: bold;
+    src: url("../font/Sniglet-ExtraBold.otf") format("embedded-opentype"),
+        url("../font/Sniglet-ExtraBold.ttf")format("truetype");
+}
+body{
+	background:url("../img/game_bg2.png");
+	background-size:cover;
+	color:#111;
+    overflow:hidden;
+    min-width:1000px;
+    font-family: 'Sniglet', 'Arial';
+}
+.btn-play:hover, 
+.new-game:hover {
+    transform: scale(0.99);
+}
+.container{
+	max-width:1000px;
+	margin:25px auto;
+	height:500px;
+    border:2px solid rgba(90,90,90,0.5);
+    cursor:pointer;
+}
+.container a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 0px;
+}
+.wrap{
+    width:1000px;
+}
+.logo{
+	width:396px;
+	height:148px;
+	background:url("../img/logotype_game.png");
+	background-size:cover;
+	margin:70px auto 50px auto;
+}
+.logo, .btn-play{
+    display:block;
+}
+.btn-play {
+    font-weight: 100;
+    padding: 20px;
+    background: transparent;
+    color: #425ea3;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 270px auto 0px auto;
+    max-width: 300px;
+    text-align: center;
+    font-size:20px;
+    border: 1px solid #425ea3;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.in-game-logo{
+    width:198px;
+    height:74px;
+    margin:0;
+    margin:15px 15px 15px 15px;
+    float:left;
+}
+.game-font-class{
+    color: #fee90e;
+    text-shadow: 0px 2px 2px #294da1, 2px 0px 2px #294da1, 2px 2px 0px #294da1;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.score1 {
+    font-size: 26px;
+    float: right;
+    margin: 25px 50px 15px 15px;
+}
+.top-head{
+    position:absolute;
+}
+.new-game, .lives{
+    cursor:pointer;
+    font-family: 'Sniglet', 'Arial';
+    font-size:25px;
+    text-align:center;
+}
+.new-game.game-font-class {
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 50px;
+    height: 80px;
+}
+.lives{
+    float:right;
+    position:absolute;
+    margin-top:400px;
+    margin-left:850px;
+}
+.game-over-1 {
+    text-align: center;
+    width: 100%;
+    padding: 190px 0px 10px 0px;
+    font-size: 35px;
+}
+.game-over-2 {
+    display:block;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
+.result{
+    width:100%;
+}
+.game-over-3{
+    display:block;
+    width:100%;
+    text-align:center;
+    padding-top:30px;
+}
+.game-area{
+    width:600px;
+    height:496px;
+    background:rgba(50,50,50,0.05);
+    margin:0 auto;
+}
+.top-game{
+    height:385.5px;
+    position : relative;
+}
+.bottom-game{
+    height:110.5px;
+    position : relative;
+}
+.draksel-boy{
+    width:102.5px;
+    height:110.5px;
+    position : relative;
+    display:inline-block;
+}
+.egor-player{
+    background:url('../img/egor_player.png');
+    background-size:cover;
+}
+.misha-player{
+    background:url('../img/misha_plyaer.png');
+    background-size:cover;
+}
+.bottle-, .tea-, .provoda-, .lenta-{
+    background:url('../img/bottle.png?');
+    width:22px;
+    height:82px;
+    background-size:cover;
+    display:inline-block;
+    position : absolute;
+    float:left;
+    left:0px;
+}
+.center-bottles {
+    text-align: center;
+}
+.bottle, .tea, .provoda, .lenta{
+    background:url('../img/bottle.png');
+    width:22px;
+    height:82px;
+    background-size:cover;
+    display:inline-block;
+}
+
+.tea-, .tea{
+    background:url('../img/tea.png?');
+}
+.provoda-, .provoda{
+    background:url('../img/provoda.png?');
+}
+.lenta-, .lenta{
+    background:url('../img/lenta.png?');
+}
+.rules{
+    width:996px;
+    height:496px;
+    background: #f1f1f1;
+    position:fixed;
+    color:#111;
+    text-align:center;
+}
+.rules h2{
+    display:block;
+    width:100%;
+    padding-top:20px;
+    font-size:25px;
+    padding-bottom:20px;
+}
+.rules a,
+.rules p{
+    font-size:20px;
+}
+@media (orientation: portrait) {
+  body {
+   }
+  .container{
+    margin:0px auto;
+  }
+}
+
+.hero-selecter {
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+    top: 70px;
+}
+.hero-selecter h2 {
+    font-size: 17px;
+    position: relative;
+    top: 40px;
+}
+
+.player-photo{
+    width:125px;
+    height:125px;
+    float:left;
+    position:relative;
+    top:40px;
+}
+.egor-photo{
+    margin-right:25px;
+    background: url(../img/egor.png);
+    background-size:cover;
+}
+.misha-photo{
+    background: url(../img/misha.png);
+    background-size:cover;
+}
+.active-player{
+    border:2px solid red;
+}
