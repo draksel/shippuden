@@ -119,7 +119,7 @@
 		function game_over(){
 			if(lives_<=0){
 				$('.row').text('');
-				$('.row').append('<div class="result"><h2 class="game-over-1 game-font-class"> Pe o smena: '+points+' de lei.</h2><div class="center-bottles"> <div class="bottle"></div>x'+drinked_1*2+' <div class="tea"></div>x'+drinked_2*2+' <div class="lenta"></div>x'+drinked_3*2+' <div class="provoda"></div>x'+drinked_4*2+'</div> <br><small class="game-over-2"> Te rog premia: '+harder_+'</small><a class=" game-over-3" href="">Попробовать еще раз</a></div>');
+				$('.row').append('<div class="result"><h2 class="game-over-1 game-font-class"> Pe o smena: '+points+' de lei.</h2><div class="center-bottles"> <div class="bottle"></div>x'+drinked_1*2+' <div class="tea"></div>x'+drinked_2*2+' <div class="provoda"></div>x'+drinked_3*2+' <div class="lenta"></div>x'+drinked_4*2+'</div> <br><small class="game-over-2"> Te rog premia: '+harder_+'</small><a class=" game-over-3" href="">Попробовать еще раз</a></div>');
 			}else setTimeout(game_over,500);
 		}
 
